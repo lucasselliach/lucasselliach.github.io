@@ -1,0 +1,12 @@
+/* Custom Stylesheet */
+/* Made by Lucas Selliach */
+
+.dark-primary-color    { background: #7B1FA2; }
+.default-primary-color { background: #9C27B0; }
+.light-primary-color   { background: #E1BEE7; }
+.text-Icons-primary-color    { color: #FFFFFF; }
+.text-Icons-secondary-color    { color: #9C27B0; }
+.accent-color          { background: #FFC107; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }

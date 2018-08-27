@@ -1,0 +1,22 @@
+{
+  "name": "lucasselliach.github.io",
+  "version": "1.0.0",
+  "description": "My website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Selliach",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-materialize": "^0.2.1",
+    "angular-translate": "^2.12.1",
+    "animate.css": "^3.5.2",
+    "jquery": "^2.2.4",
+    "materialize-css": "^0.97.7",
+    "mdi": "^1.7.22",
+    "wowjs": "^1.1.3"
+  },
+  "devDependencies": {}
+}

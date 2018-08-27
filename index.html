@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html ng-app="LucasSelliachWebSite" lang="pt">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+      
+  <meta property="og:image" content="http://lucasselliach.github.io/Image/Back01.png"/>
+  <meta property="og:url" content="http://lucasselliach.github.io/"/>
+  <meta property="og:locale" content="pt_BR"/>
+  <meta property="og:title" content="Lucas Selliach"/>
+  <meta property="og:site_name" content="Lucas Selliach"/>
+  <meta property="og:description" content="Informações sobre o Lucas Selliach. Developer."/>
+  <meta property="og:type" content="website"/>
+  <meta property="fb:app_id" content="299391430837356"/>
+    
+  <title>Lucas Selliach</title>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+  <link rel="stylesheet" href="References/materialize.min.css"/>
+  <link rel="stylesheet" href="References/animate.min.css"/>
+  <link rel="stylesheet" href="References/materialdesignicons.min.css"/>
+  <link rel="stylesheet" href="CSS/Style.css"/>
+</head>
+<body>
+
+    <!-- NavBar Principal-->  
+    <nav class="default-primary-color" role="navigation">
+        <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo" translate="LucasSelliachWebSite_Titulo"></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#intro" translate="LucasSelliachWebSite_Introducao"></a></li>
+            <li><a href="#Studies" translate="LucasSelliachWebSite_Estudos"></a></li>
+            <li><a href="#Work" translate="LucasSelliachWebSite_Trabalhos"></a></li>
+            <li><a href="#Contact" translate="LucasSelliachWebSite_Contatos"></a></li>
+            <li class="" ng-controller="TranslateController">
+                <!-- Dropdown Structure -->
+                <ul id='idiomaDropdown' class='dropdown-content'>
+                    <li ng-repeat="value in select.choices"><a href="#" ng-click="selectedItemChanged(value)">{{value}}</a></li>
+                </ul>            
+                <!-- Dropdown Trigger -->
+                <a class='dropdown-button' href='#' data-activates='idiomaDropdown' dropdown data-hover="true">{{'LucasSelliachWebSite_Idioma' | translate}}
+                    <i class="material-icons right">arrow_drop_down</i>
+                </a>
+            </li>
+        </ul>    
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="#intro" translate="LucasSelliachWebSite_Introducao"></a></li>
+            <li><a href="#Studies" translate="LucasSelliachWebSite_Estudos"></a></li>
+            <li><a href="#Work" translate="LucasSelliachWebSite_Trabalhos"></a></li>
+            <li><a href="#Contact" translate="LucasSelliachWebSite_Contatos"></a></li>
+            <li class="" ng-controller="TranslateController">
+                <!-- Dropdown Structure -->
+                <ul id='idiomaDropdown' class='dropdown-content'>
+                    <li ng-repeat="value in select.choices"><a href="#" ng-click="selectedItemChanged(value)">{{value}}</a></li>
+                </ul>            
+                <!-- Dropdown Trigger -->
+                <a class='dropdown-button' href='#' data-activates='idiomaDropdown'>{{'LucasSelliachWebSite_Idioma' | translate}}
+                    <i class="material-icons right">arrow_drop_down</i> 
+                </a>
+            </li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <!-- NavBar Principal End -->  
+
+    <!-- intro -->
+    <div id="intro" class="slider" slider>
+        <ul class="slides">
+            <li>
+                <img src="Image/visualstudio.png"> <!-- random image -->
+                <div class="caption center-align">
+                    <!--<h3>Desenvolvimento WEB</h3>
+                    <h5 class="light grey-text text-lighten-3">Utilizando ferramentas da comunidade.</h5>-->
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!--intro End -->
+
+    <!-- Studies --> 
+
+    <div id="Studies" class="section">
+        <div class="container">
+            <div class="row">
+                <div  class="col s12">
+                    <h2 class="center header text_h2" translate="LucasSelliachWebSite_Estudos_Principal"></h2>
+                </div>
+
+                <div  class="col s12 m6">
+                    <div class="icon-block">
+                        <h2 class="center text-Icons-secondary-color"><i class="large material-icons">web</i></h2>
+                        <h5 class="center">FRONTEND</h5>
+                        <p class="center light" translate="LucasSelliachWebSite_Estudos_Front"></p>
+                    </div>
+                </div>
+
+                <div  class="col s12 m6">
+                    <div class="icon-block">
+                        <h2 class="center text-Icons-secondary-color"><i class="large material-icons">settings</i></h2>
+                        <h5 class="center">BACKEND</h5>
+                        <p class="center light" translate="LucasSelliachWebSite_Estudos_Back"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="Image/Back01.png">
+        </div>
+    </div>
+
+    <!-- Studies End --> 
+
+    <!-- Works -->
+    <div id="Work" class="section">
+        <div class="container">
+            <div class="row">
+
+                <!-- CARD 01 -->
+                <div class="wow bounceInLeft">
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="Image/Project01.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4" translate="LucasSelliachWebSite_Trabalhos_Projeto01_Titulo"><i class="mdi-navigation-more-vert right"></i></span>
+                                <p><a href="https://github.com/lucasselliach/DockerStepByStep" translate="LucasSelliachWebSite_Trabalhos_ProjetoLink"></a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4" translate="LucasSelliachWebSite_Trabalhos_Projeto01_Titulo"><i class="mdi-navigation-close right"></i></span>
+                                <p translate="LucasSelliachWebSite_Trabalhos_Projeto01_Descricao"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 02 -->
+                
+                <div class="wow bounceInDown">
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="Image/Project02.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4" translate="LucasSelliachWebSite_Trabalhos_Projeto02_Titulo"><i class="mdi-navigation-more-vert right"></i></span>
+                                <p><a href="https://github.com/lucasselliach/PonixProject" translate="LucasSelliachWebSite_Trabalhos_ProjetoLink"></a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4" translate="LucasSelliachWebSite_Trabalhos_Projeto02_Titulo"><i class="mdi-navigation-close right"></i></span>
+                                <p translate="LucasSelliachWebSite_Trabalhos_Projeto02_Descricao"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 03 -->
+                <div class="wow bounceInRight">
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="Image/Project03.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4" translate="LucasSelliachWebSite_Trabalhos_Projeto03_Titulo"><i class="mdi-navigation-more-vert right"></i></span>
+                                <p><a href="https://github.com/lucasselliach/ArquiteturaGeral" translate="LucasSelliachWebSite_Trabalhos_ProjetoLink"></a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4" translate="LucasSelliachWebSite_Trabalhos_Projeto03_Titulo"><i class="mdi-navigation-close right"></i></span>
+                                <p translate="LucasSelliachWebSite_Trabalhos_Projeto03_Descricao"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 04 -->
+                <!--<div class="wow bounceInLeft">
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="Image/Back02.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
+                                <p><a href="#">Project link</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                                <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                
+                <!-- CARD 05 -->
+                <!--<div class="wow bounceInDown">
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="Image/Back02.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
+                                <p><a href="#">Project link</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                                <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+                <!-- CARD 06 -->
+                <!--<div class="wow bounceInRight">
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="Image/Back02.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
+                                <p><a href="#">Project link</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                                <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div> 
+    <!-- Works End --> 
+
+    <!-- Footer -->
+
+    <footer id="Contact" class="page-footer purple">
+    <div class="container">
+      <div class="row">
+
+        <div class="col l6 s12">
+            <h5 class="white-text" translate="LucasSelliachWebSite_Footer_Sobre"></h5>
+            <p class="grey-text text-lighten-4" translate="LucasSelliachWebSite_Footer_Sobre_Yo"></p>
+        </div>
+        
+        <div class="col l3 s12">
+          <h5 class="white-text" translate="LucasSelliachWebSite_Footer_Pesquisas"></h5>
+          <ul>
+            <li><a class="white-text" href="https://www.asp.net/">ASP.NET</a></li>
+            <li><a class="white-text" href="https://www.docker.com/">DOCKER</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"  translate="LucasSelliachWebSite_Footer_Contato"></h5>
+          <ul>
+            <li>
+                <a class="mdi mdi-github-box mdi-light mdi-36px" href="https://github.com/lucasselliach"></a>
+                <a class="mdi mdi-linkedin-box mdi-light mdi-36px" href="https://br.linkedin.com/in/lucasselliach"></a>
+                <a class="mdi mdi-twitter-box mdi-light mdi-36px" href="https://twitter.com/LucasSelliach"></a>
+                <a class="mdi mdi-google-plus-box mdi-light mdi-36px" href="https://plus.google.com/u/0/101897198376014212735"></a> 
+                <a class="mdi mdi-dribbble-box mdi-light mdi-36px" href="https://dribbble.com/lucasselliach"></a>    
+            </li>
+            <li><a class="white-text" href="#!">lucas.selliach@outlook.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by Lucas Selliach with <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Footer End -->
+
+
+    <!--  Scripts-->
+    
+    <script type="text/javascript" src="References/jquery.min.js"></script>
+    <script type="text/javascript" src="References/wow.min.js"></script>
+    <script type="text/javascript" src="References/materialize.min.js"></script>
+    <script type="text/javascript" src="References/angular.min.js"></script>
+    <script type="text/javascript" src="References/angular-materialize.min.js"></script>
+    <script type="text/javascript" src="References/angular-translate.min.js"></script>
+    
+    <!-- Script Tamplate -->
+    <script src="JS/Init.js"></script>
+    <script src="JS/TranslateApp.js"></script>
+</body>
+</html>
